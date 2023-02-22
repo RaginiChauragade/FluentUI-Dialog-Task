@@ -13,7 +13,7 @@ To run this project, you'll need to have the .Net Core SDK installed.
 - `Pages` : contains the razor pages that makes the user interface. Dialog component is added in index.razor page.
 
 ### Output
-<img width="930" alt="image" src="https://user-images.githubusercontent.com/108786379/220648547-86647536-822f-4c9e-a123-55e3d40d0076.png">
+<img width="925" alt="image" src="https://user-images.githubusercontent.com/108786379/220649854-4fdf978f-04f5-4e3a-aa56-96fe18c423b3.png">
 <img width="927" alt="image" src="https://user-images.githubusercontent.com/108786379/220648717-3d3a94cd-9a39-468e-816b-dfffc303e16e.png">
 <img width="927" alt="image" src="https://user-images.githubusercontent.com/108786379/220649052-4b1041fb-d044-43a9-9f73-b12c6610fa2c.png">
 
