@@ -1,0 +1,64 @@
+﻿@page "/"
+
+<PageTitle>Fluent-Dialog-Task</PageTitle>
+
+<head>
+    <style>
+        #dialog1 {
+            --dialog-width : 500px;
+            --dialog-height : 250px;
+        }
+    </style>
+</head>
+
+<center>
+<FluentDialog Hidden="ModalHidden" id="dialog1" aria-label="Simple dialog" Modal="true">
+    <h4>Employee Details</h4>  
+    <br/>
+    Name <FluentTextField @bind-Value="eName" Appearance="Appearance.Filled" Placeholder="Enter employee name"></FluentTextField>
+    <br/>
+    <br/>
+    Position <FluentTextField @bind-Value="ePosition" Appearance="Appearance.Filled" Placeholder="Enter employee position"></FluentTextField>
+    <br/>
+    <br/>
+    <FluentButton Appearance="@Appearance.Accent" @onclick="Save">Save</FluentButton>
+    <FluentButton Appearance="@Appearance.Accent" @onclick="Cancel">Cancel</FluentButton>
+</FluentDialog>
+</center>
+
+<p>Fluent UI Component : Dialog</p><hr />
+<FluentButton Appearance="@Appearance.Accent" @onclick="ShowDialog">Enter Details</FluentButton>
+
+
+
+@if(@n1 == @eName)
+{
+    <h7><b>Employee Details</b></h7>
+    <br/>
+    <p>Name : @n1</p>
+    <p>Position : @p1</p>
+}
+
+
+@code{
+    
+    public bool ModalHidden { get; set; } = true;
+    private string eName { get; set; } = " ";
+    private string ePosition { get; set; } = "";
+    public string n1 = "";
+    public string p1 = "";
+
+    private void ShowDialog() => ModalHidden = false;
+    private void Cancel() => ModalHidden = true;
+    private void Save()
+    {   
+        n1 = eName;
+        p1 = ePosition;
+        ModalHidden = true;
+
+    }
+
+    
+}
+
+
