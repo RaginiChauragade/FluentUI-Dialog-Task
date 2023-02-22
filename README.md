@@ -7,7 +7,9 @@ To run this project, you'll need to have the .Net Core SDK installed.
 
 ### Usage
 - Run the below command in the project directory :
-> dotnet watch run
+```bash
+dotnet watch run
+```
 
 ### Code
 - `Pages` : contains the razor pages that makes the user interface. Dialog component is added in index.razor page.
