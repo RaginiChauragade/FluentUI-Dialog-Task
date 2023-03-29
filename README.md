@@ -1,6 +1,6 @@
 # POC Task on Fluent UI Component : Dialog
 
-- This is a simple task using the Blazor framework. It opens a dialog on a button click, dialog takes inputs from user in textfields and displays it over scree.
+- This is a simple task using the Blazor framework. It opens a dialog on a button click, dialog takes inputs from user in textfields and displays it over screen.
 
 ### Installation
 To run this project, you'll need to have the .Net Core SDK installed.
